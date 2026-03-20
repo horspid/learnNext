@@ -1,13 +1,8 @@
 import ButtonGetRequest from '@/components/ButtonGetRequest';
+import { getHelloMessage } from '@/lib/hello';
 
-async function getMessageFromAPI() {
-	const res = await fetch('http://localhost:3000/api/hello');
-
-	return res.json();
-}
-
-const GetExample = async () => {
-	const { message } = await getMessageFromAPI();
+const GetExample = () => {
+	const { message } = getHelloMessage();
 
 	return (
 		<section className="content">
