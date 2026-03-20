@@ -1,3 +1,5 @@
+import Button from '@/components/Button';
+
 export default function Home() {
 	return (
 		<section className="content">
@@ -7,6 +9,7 @@ export default function Home() {
 				создавать быстрее, масшатабируемые и SEO-дружественные
 				приложения
 			</p>
+			<Button />
 		</section>
 	);
 }
